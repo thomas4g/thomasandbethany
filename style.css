@@ -1,0 +1,73 @@
+body {
+    background-image: url('media/background2.jpg');
+    background-size: 100%;
+}
+
+header {
+    font-family: 'Amatic SC';
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    text-shadow: 0 0 10px #000;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+    margin-top: calc(20% - 100px)
+}
+
+header > h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+    font-size: 5em;
+    text-shadow: 0 0 10px #000;
+}
+
+nav {
+    font-family: Roboto Slab, serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #000;
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    vertical-align: top;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: .15s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #000;
+    font-size: 1.1em;
+}
+
+nav ul li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: currentColor;
+    width: 0%;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    transition: .5s ease;
+
+}
+
+nav ul li a:hover:before {
+    width: 100%;
+    left: 0;
+}
