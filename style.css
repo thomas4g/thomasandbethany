@@ -1,32 +1,64 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    background-image: url('media/background2.jpg');
-    background-size: 100%;
-}
-
-header {
-    font-family: 'Amatic SC';
-    text-align: center;
+    background-attachment: fixed;
+    background-image: url('media/background4.jpg');
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
     color: white;
+    background-position: center;
 }
 
-header > h1 {
-    text-shadow: 0 0 10px #000;
-    font-size: 6em;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC';
     padding: 0;
     margin: 0;
-    margin-top: calc(20% - 100px)
+}
+
+h1 {
+    text-shadow: 0 0 10px #000;
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4em;
+    text-shadow: 0 0 10px #000;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* padding-top: calc(20% - 100px); */
+    box-sizing: border-box;
+}
+
+.page > *{
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+}
+
+.card {
+    background-color: rgba(241, 233, 210, 0.85);
+    width: 1024px;
+    margin: 0 auto;
+    box-shadow: 0 0 50px 2px #000;
+    padding: 40px;
+    box-sizing: border-box;
+    text-shadow: 0 0 7px #000;
 }
 
 header > h2 {
-    margin: 0;
-    padding: 0;
     margin-top: -20px;
-    font-size: 5em;
-    text-shadow: 0 0 10px #000;
 }
 
 nav {
-    font-family: Roboto Slab, serif;
     font-size: 1.5em;
     text-shadow: 0 0 5px #000;
 }
@@ -38,7 +70,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     text-align: center;
-    width: 200px;
+    min-width: 200px;
     vertical-align: top;
 }
 
@@ -47,10 +79,14 @@ nav ul li a {
     text-decoration: none;
     transition: .15s ease;
     position: relative;
+    text-shadow: -1px -1px 8px #000,
+				  1px  1px 8px #000, 
+				 -1px  1px 8px #000, 
+				  1px -1px 8px #000;
 }
 
 nav ul li a:hover {
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 50px #000;
     font-size: 1.1em;
 }
 
@@ -71,3 +107,4 @@ nav ul li a:hover:before {
     width: 100%;
     left: 0;
 }
+
