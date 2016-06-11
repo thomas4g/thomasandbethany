@@ -9,6 +9,9 @@ body {
     background-attachment: fixed;
     background-image: url('media/background4.jpg');
     background-size: cover;
+    background-repeat: none;
+    background-position: center;
+
     font-family: 'Roboto Slab', serif;
     color: white;
     background-position: center;
@@ -69,6 +72,10 @@ h2 {
 .card .block {
     width: 300px;
     display: inline-block;
+}
+
+.card .block time {
+    font-style: italic;
 }
 
 .card h2 {
