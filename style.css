@@ -3,18 +3,19 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 body {
     background-attachment: fixed;
     background-image: url('media/background4.jpg');
     background-size: cover;
-    background-repeat: none;
-    background-position: center;
-
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
     font-family: 'Roboto Slab', serif;
     color: white;
-    background-position: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +73,10 @@ h2 {
 .card .block {
     width: 300px;
     display: inline-block;
+}
+
+.big.block {
+    width: 450px;
 }
 
 .card .block time {
@@ -136,12 +141,32 @@ nav ul li a:hover:before {
     left: 0;
 }
 
-.nostyle {
+a.nostyle {
     text-decoration: none;
     color: initial;
     border-bottom: dashed 1px currentColor;
 }
 
-.nostyle:hover {
+a.nostyle:hover {
     border-bottom: dotted 1px currentColor;
+}
+
+.prologue {
+    display: block;
+}
+
+#hotels {
+    font-size: .8em;
+}
+
+ul.nostyle {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nostyle li {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
