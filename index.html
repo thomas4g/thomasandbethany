@@ -100,6 +100,19 @@
             </div>
         </div>
         -->
+        <script src='/js.js' type='text/javascript'></script>
+        <script src='/html_protos.js' type='text/javascript'></script>
+        <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+        <script type='text/javascript'>
+            window.onload = function () {
+                $$('nav ul a').forEach(function (a) {
+                    a.addEventListener('click', function (ev) {
+                        Velocity($$(this.getAttribute('href')), 'scroll', {duration: 650})
+                    })
+                })
+            }
+        </script>
+
     </body>
 
 </html>
