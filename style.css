@@ -83,6 +83,11 @@ h3 {
 
 .big.block {
     width: 450px;
+    margin: 25px 0;
+}
+
+.big.block h2 {
+    font-size: 3em;
 }
 
 .card .block time {
