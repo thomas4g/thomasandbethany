@@ -1,6 +1,3 @@
-* {
-    transition: 1s;
-}
 
 html, body {
     margin: 0;
@@ -37,6 +34,10 @@ header h1 {
 h2 {
     font-size: 4em;
     text-shadow: 0 0 10px #000;
+}
+
+h3 {
+    font-size: 2.5em;
 }
 
 .page {
@@ -205,4 +206,32 @@ ul.nostyle li {
 
 .collapsed nav ul li {
     display: block;
+}
+
+
+/* Story CSS */
+#story .card {
+    transform: translateY(0%);
+}
+
+
+figure {
+    display: block;
+    margin: 40px auto;
+    width: 450px;
+}
+
+figure img {
+    max-width: 100%;
+    box-shadow: 0 0 55px -10px #000000;
+    margin: 10px auto;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0;
+}
+
+.story-section {
+    margin: 150px 0;
 }

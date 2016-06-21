@@ -16,10 +16,10 @@
 
                 <nav>
                     <ul>
-                        <li><a href='#story'>Story</a></li>
                         <li><a href='#wedding'>Wedding Details</a></li>
                         <li><a href='#registry'>Registry</a></li>
                         <li><a href='#hotels'>Hotels</a></li>
+                        <li><a href='#story'>Story</a></li>
                     </ul>
                 </nav>
             </div>
@@ -90,7 +90,154 @@
 
         <div id='story' class='page'>
             <div class='card'>
-                <h2>Coming Soon</h2>
+                <h2>Our Story</h2>
+                <em class='prologue'>by Bethany</em>
+<p>
+I met Thomas when I was 12-years-old. Even though boys up to that point had generally irritated me, Thomas was the first one of which I thought, &ldquo;this guy is future husband material.&rdquo; I dismissed the thought, because what business does a 12 year old have falling in love?
+</p>
+
+<p>
+That is, I dismissed it for about three years. Yes, I decided to fall in love with Thomas at a summer church picnic in 2012. I was 15. He was smart, tall, and funny. His name began to fill my diaries in the days and months afterwards. Love at first sight? Ish? You could say so! He was the one.
+</p>
+
+<p>
+Fast forward to the following November: we were 16 and 18. His family joined us at a Christmas party and we finally got a chance to hang out for real. Did I agonize over my outfit? Totally. Did I do my hair? Yes. Did I make sure my best friend Maggie would be at the party so that she'd help ease our awkward social tension? Absolutely. It was dreamy and perfect! We found a few excuses to hang out afterwards: swing dances with friends, film collaborations, Six Flags...
+</p>
+
+<p>
+It was the sweetest young romance I could have ever dreamed of.  Through God's appropriate timing, Christmas 2013 was when Thomas and I picked up regular correspondence. We quickly found that we shared the same passions, beliefs, and goals. He became a best friend to me before anything else.
+</p>
+
+<figure>
+<img class='inline' src='/media/story/cowboys.jpg'>
+</figure>
+
+<p>
+April 12th 2014, Thomas asked me to be his girlfriend by hiding a cookie cake with a special message in my best friend's freezer. The plan was for me to find it while on a quest for ice cream...
+</p>
+
+<figure>
+<img class='inline' src='/media/story/cookiecake.jpg'>
+</figure>
+
+<p>
+I received the surprise of my life... standing in the Thelen's garage (where he was camping out to find me)
+</p>
+
+<figure>
+    <img class='inline' src='/media/story/freezer.jpg'>
+</figure>
+
+<p>
+We made sure to snap a photograph of the moment and I'm SO GLAD we did!
+</p>
+
+<p>
+My life has not been the same since. Thomas has filled it with laughter, happiness, and love. The next two years were to hold so many happy memories...
+</p>
+
+
+<figure>
+    <img src='/media/story/beth_grad.jpg'>
+    <figcaption>Bethany's Highschool Graduation 2014</figcaption>
+</figure>
+
+
+<figure>
+    <img src='/media/story/lake.jpg'>
+    <figcaption>Lake Trip! 3 Months Dating, Summer 2014</figcaption>
+</figure>
+
+
+
+<figure>
+    <img src='/media/story/guns.jpg'>
+    <figcaption>
+        Liberty Guns Project Summer 2014
+    </figcaption>
+</figure>
+
+<figure>
+    <img src='/media/story/la_christmas.jpg'>
+    <figcaption>
+        Liberty Alliance Christmas Party 2014
+    </figcaption>
+</figure>
+
+
+<figure>
+    <img src='/media/story/snow.jpg'>
+    <figcaption>
+        Snow! January 2015
+    </figcaption>
+</figure>
+
+
+<p>
+Thomas and his parents surprised me with a candlelight dinner for two at home. Twinkle lights were hung, a menu was designed, amazing meals were prepared by his mom, and we had our very own waiter (his dad).
+(That's right, I'm marrying into an AWESOME family.)
+</p>
+
+<figure>
+    <img src='/media/story/valentines.jpg'>
+    <figcaption>
+        First Valentines Day 2015
+    </figcaption>
+</figure>
+
+
+<figure>
+    <img src='/media/story/summer.jpg'>
+    <figcaption>
+        Beginning Summer 2015
+    </figcaption>
+</figure>
+
+
+
+<figure>
+    <img src='/media/story/gatlinburg.jpg'>
+    <figcaption>
+        Gatlinburg Fall 2015 with the gang!!
+    </figcaption>
+</figure>
+
+<div class='story-section'>
+<h3>Feb 27th, 2016:
+The Proposal
+</h3>
+<figure>
+    <img src='/media/story/engagement.jpg'>
+</figure>
+<p>
+Thomas proposed by tricking me into thinking I was giving him a tour at Villa Vallorani. I walked from room to room explaining the future plans for it until I walked into one decorated in candles, flowers, and pictures of us. I realized what was going on and turned around trembling to see him getting on his knee... Oh, happy day!!!!!!
+</p>
+</div>
+
+
+<figure>
+    <img src='/media/story/anniv.jpg'>
+    <figcaption>
+        Two Year Anniversary!
+        April 12th, 2016
+    </figcaption>
+</figure>
+
+
+
+
+<figure>
+    <img src='/media/story/grad.jpg'>
+    <figcaption>
+        My Georgia Tech College Graduate!
+        May 7th, 2016
+    </figcaption>
+</figure>
+
+<p>
+I couldn't be more thankful for the love that God has given us.
+We are beyond blessed by how he has orchestrated his will in our lives and I can't WAIT to spend life with my best friend!
+</p>
             </div>
         </div>
 
@@ -134,7 +281,7 @@
 
                 $$('nav ul a').forEach(function (a) {
                     var p = $$(a.getAttribute('href'))
-                    if (!p.classList.contains("active") && 
+                    if (!p.classList.contains("active") &&
                         (p.offsetTop > window.scrollY && p.offsetTop + p.offsetHeight / 2 < window.scrollY + document.body.offsetHeight) ||
                         (p.offsetTop + p.offsetHeight / 2 > window.scrollY && p.offsetTop + p.offsetHeight < window.scrollY + document.body.offsetHeight)) {
                         $$('nav ul a').forEach(function (a) { a.classList.remove('active') })
